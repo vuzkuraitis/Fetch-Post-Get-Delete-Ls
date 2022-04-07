@@ -1,0 +1,364 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+header > h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0.5rem;
+  overflow: hidden;
+  position: fixed;
+}
+h1 {
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+p {
+  color: #dddddd;
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-align: center;
+}
+footer {
+  display: none;
+}
+input[type="checkbox"] {
+  height: 1.7rem;
+  margin-right: 1.5rem;
+  position: relative;
+  vertical-align: middle;
+  width: 1.7rem;
+}
+label {
+  color: #838383;
+  display: block;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0.5rem 0rem;
+}
+.leftContainer {
+  background: linear-gradient(#424add, #232471);
+}
+.innerLeftContainer {
+  width: 90%;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  padding: 2rem;
+  width: 100vw;
+}
+.formContainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  padding: 2rem;
+  width: 100vw;
+}
+.formContainer3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  padding: 2rem;
+}
+.formContainer3 .line {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formContainer3 > .validationForm {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formContainer3 > .validationForm > .formback {
+  display: flex;
+  width: 10rem;
+  gap: 3rem;
+}
+.formContainer3 > .validationForm > p {
+  color: #838383;
+}
+.formContainer3 > .validationForm > .formback > p {
+  color: #838383;
+}
+.formContainer4 {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  padding: 2rem;
+}
+.formContainer4 > .validationForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.formContainer4 > .validationForm > p {
+  text-align: left;
+  color: #838383;
+}
+.formContainer4 .line {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.formContainer4 > .progressLine {
+  float: left;
+  width: 35%;
+}
+.button {
+  display: none;
+}
+.line {
+  border-bottom: 0.15rem solid #b6b6b6;
+  margin-top: 1.5rem;
+}
+.pageNumber {
+  color: #838383;
+  margin-bottom: 0.5rem;
+}
+.formTwo {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  justify-content: space-around;
+}
+.formTwo > input,
+select {
+  width: 100%;
+  height: 3rem;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.2rem;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.terms {
+  font-size: 0.8rem;
+}
+.terms > span {
+  color: #424add;
+}
+.terms > input {
+  height: 1rem;
+}
+.progressLine {
+  float: left;
+  width: 15%;
+  border-bottom: 0.15rem solid #2ab74f;
+  margin-bottom: 1.5rem;
+  margin-left: 30%;
+  margin-right: auto;
+}
+.hidden {
+  display: none;
+}
+.approvebuttons {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reject {
+  width: 7rem;
+  background-color: #ababab;
+  border-radius: 0.2rem;
+  border: none;
+  color: #ffffff;
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+.approve {
+  width: 15rem;
+  background-color: #676cd2;
+  border-radius: 0.2rem;
+  border: none;
+  color: #ffffff;
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+#next {
+  align-self: flex-end;
+  background-color: #676cd2;
+  border-radius: 0.2rem;
+  border-radius: 0rem;
+  border: none;
+  color: #ffffff;
+  display: block;
+  float: right;
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 4rem;
+}
+@media (max-width: 760px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    height: 2rem;
+    margin: 0;
+  }
+  p {
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+  }
+  input[type="checkbox"] {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+  label {
+    font-size: 0.8rem;
+  }
+  form {
+    width: 90%;
+  }
+  .leftContainer {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .innerLeftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightContainer {
+    display: block;
+    width: 100vw;
+  }
+  .button {
+    background-color: #676cd2;
+    border-radius: 2rem;
+    border: none;
+    color: #ffffff;
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .approvebuttons {
+    width: 100%;
+  }
+  .progressLine {
+    margin-left: 0;
+  }
+  .formContainer3 > .validationForm {
+    margin: 0;
+    width: 100%;
+  }
+  .formContainer3 .line {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formContainer4 > .validationForm {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 761px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  footer {
+    color: #838383;
+    display: block;
+    font-size: 0.8rem;
+    left: 22%;
+    position: fixed;
+    top: 95%;
+  }
+  .leftContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 50vw;
+  }
+  .leftContainer > p {
+    width: 80%;
+  }
+  .rightContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 50vw;
+  }
+  .pageNumber,
+  .formTitle {
+    width: 40%;
+  }
+  .formContainer {
+    height: 50%;
+    width: 100%;
+  }
+  .formContainer > .pageNumber,
+  .formTitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formContainer2 {
+    height: 50%;
+    width: 100%;
+  }
+  .formContainer2 > .pageNumber,
+  .formTitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formContainer3 {
+    height: 50%;
+    width: 100%;
+  }
+  .formContainer3 > .pageNumber,
+  .formTitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formContainer4 {
+    height: 50%;
+    width: 100%;
+  }
+  .formContainer4 > .pageNumber,
+  .formTitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+} ;

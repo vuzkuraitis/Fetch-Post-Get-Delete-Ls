@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@300;400;500&family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/96a010ff08.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Google</h1>
+    </header>
+    <main>
+      <div class="leftContainer">
+        <div class="innerLeftContainer">
+          <h1>An Amazing Website</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            laboriosam odio quo aut maiores quidem accusantium molestiae?
+            Cupiditate officiis ratione corporis sequi nesciunt sint incidunt
+            similique nisi, libero saepe error!
+          </p>
+          <button class="button">Start Now!</button>
+        </div>
+      </div>
+      <div class="rightContainer">
+        <div class="formContainer">
+          <div class="pageNumber">1/5</div>
+          <div class="formTitle">What do you usually do after work?</div>
+          <form name="add">
+            <div class="line"></div>
+            <button type="submit" class="button" id="next">Next</button>
+          </form>
+        </div>
+        <div class="formContainer2 hidden">
+          <div class="progressLine"></div>
+          <div class="pageNumber">2/5</div>
+          <div class="formTitle">Please fill in your details</div>
+          <form name="addPersonalData" class="formTwo">
+            <input
+              type="text"
+              name="first_name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <select name="country" id="country">
+              <option>...</option>
+            </select>
+            <div class="terms">
+              <input type="checkbox" />Please accept our
+              <span>Terms and Conditions</span>
+            </div>
+            <div class="line"></div>
+            <button type="submit" class="button" id="next">Next</button>
+          </form>
+        </div>
+        <div class="formContainer3 hidden">
+          <div class="progressLine"></div>
+          <div class="pageNumber">3/5</div>
+          <div class="formTitle">Are these details correct?</div>
+
+          <div class="validationForm">
+            <p class="grey">Please make sure these details are correct:</p>
+            <div class="formback" id="firstname"><p>Name</p></div>
+            <div class="formback" id="lastname"><p>Surname</p></div>
+            <div class="formback" id="eemail"><p>Email</p></div>
+            <div class="formback" id="ccountry"><p>Country</p></div>
+          </div>
+          <div class="line"></div>
+          <div class="approvebuttons">
+            <button type="submit" class="reject" id="reject">Oops, No</button>
+            <button type="submit" class="approve" id="approve">
+              I confirm details are accurate
+            </button>
+          </div>
+        </div>
+        <div class="formContainer4 hidden">
+          <div class="progressLine"></div>
+          <div class="pageNumber">4/5</div>
+          <div class="formTitle">Please check your email</div>
+
+          <div class="validationForm">
+            <p class="grey">
+              We sent you an email with all of the required information to
+              complete the registration
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer><i class="fa-regular fa-copyright"></i>2022 Data Test</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
