@@ -119,7 +119,7 @@ formDetails.addEventListener("submit", (e) => {
     country: countryId,
     activities,
   };
-  // postPersonData(personDataArray);
+  postPersonData(personDataArray);
   console.log(personDataArray);
   document.querySelector(".formContainer2").classList.add("hidden");
   document.querySelector(".formContainer3").classList.remove("hidden");
